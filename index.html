@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/* mouse over link */
+
+a:hover {
+  color: hotpink;
+}
+
+a.news_links {
+font-family:georgia,garamond,serif;
+font-size:18px;
+}
+
+a.news_links:link {
+  color: black;
+} 
+a.news_links:hover {
+  color: hotpink;
+}
+
+div.relative {
+  position: relative;
+  left: 30px;
+  border: 3px
+}
+img {
+  border-radius: 5%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.content {
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="content">
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="projects.html">Projects</a></li>
+  <li><a href="on_the_news.html">On the news</a></li>
+  <li><a href="publications.html">Publications</a></li>
+  <li><a href="cv_resume.html">CV/Resume</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+
+
+
+<img src="./assets/full_small.jpg" alt="Ali Marjaninejad"  style="float:left;width:40%;height:auto;">
+<div class="relative">
+<iframe width="57%" height="310" src="https://www.voanews.com/embed/player/0/4907996.html?type=video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- old voa src link src="https://www.voanews.com/media/2047626/embed" -->
+<iframe width="57%" height="310" src="https://www.youtube.com/embed/oe8tgMMdpqg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h1>Ali Marjaninejad</h1>
+<p style = "font-family:georgia,garamond,serif;font-size:19px;font-style:italic;">
+         I am a researcher with interests in Artificial Intelligence, Neuroscience, and the full spectrum between these two!
+      </p>
+</div>
+</div>
+
+<br /><br /><br /><br /><br /><br /><br /><br />
+</body>
+</html>
