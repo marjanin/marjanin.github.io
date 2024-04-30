@@ -94,30 +94,53 @@ li a:hover:not(.active) {
         <p align="left"> 
         Robots will become ubiquitously useful only when they require just a few attempts to teach themselves to perform different tasks, even with complex bodies and in dynamic environments. Vertebrates use sparse trial and error to learn multiple tasks, despite their intricate tendon-driven anatomies, which are particularly hard to control because they are simultaneously nonlinear, under-determined and over-determined. However, these complex body structures provides them with versatility, agility, efficiency, and adaptability levels way above the current robotic standards. Getting inspired form biological systems, I work on developing few-shot, minimal prior-kowledge and sensory data systems to develop the next generation of bio-inspired robots that feel and act more similar to biological systems. Below is a select list of relevant publication on this project:<br /><br />
         - Autonomous functional movements in a tendon-driven limb via limited experience <a href="https://www.nature.com/articles/s42256-019-0029-0">(link)</a><br />
-        - Biological underpinnings for lifelong learning machines <a href="https://www.nature.com/articles/s42256-022-00452-0">(link)</a><br /><br />
+        - Biological underpinnings for lifelong learning machines <a href="https://www.nature.com/articles/s42256-022-00452-0">(link)</a><br />
+        - Autonomous control of a tendon-driven robotic limb with elastic elements reveals that added elasticity can enhance learning <a href="https://ieeexplore.ieee.org/abstract/document/9176089">(link)</a><br /><br />
       </p>
 
 <!--         <h1 style = "font-family:georgia,garamond,serif;font-size:20px;text-align:left">Studying Biological Systems:</h1>
         <p align="left">This section of my research focuses on improving upon our understanding about biological systems (both the nervious system, or controller in the engineering language, and the mechanics, or the plant). Marjaninejad et. al. 2017 "Finger movements are mainly represented by a linear transformation of energy in band-specific ECoG signals" can serve as a good example where we shed some light on how our brain works. Marjaninejad & Valero-Cuevas 2019 is also a good example to show how important it is to understand tendon-driven mechanics in order to achieve the enviable levels of agility and versatality in vertebrates as well as to be able to control as efficiently.<br /><p/> -->
 
-        <h1 style = "font-family:georgia,garamond,serif;font-size:20px;text-align:left">Bio-Signal Processing:</h2>
+        <h1 style = "font-family:georgia,garamond,serif;font-size:20px;text-align:left">Bio-Signal Processing:</h1>
         <h2 style = "font-family:georgia,garamond,serif;font-size:17px;text-align:left">Decoding brain signals (Brain-Computer Interfaces)</h3>
-        <p align="left">placeholder<p/>
-        <h2 style = "font-family:georgia,garamond,serif;font-size:17px;text-align:left">Bio-Signal Processing topic</h3>
-        <p align="left">placeholder<p/>
-        <h2 style = "font-family:georgia,garamond,serif;font-size:17px;text-align:left">Bio-Signal Processing topic</h3>
-        <p align="left">placeholder<p/>
-        <h2 style = "font-family:georgia,garamond,serif;font-size:17px;text-align:left">Bio-Signal Processing topic</h3>
-        <p align="left">placeholder<p/>
-        <h2 style = "font-family:georgia,garamond,serif;font-size:17px;text-align:left">Bio-Signal Processing topic</h3>
-        <p align="left">placeholder<p/>
+        <p align="left">In Marjaninejad et. al. 2023, we have introduced a Maximum Likelihood estimator with Poisson assumption based decoding pipeline for the spiking neural activity recorded from a Posterior Parietal Cortex (PPC) of a human participant. We have shown it increases decoding performance compared to the state of the art used for a classification task that was to predict the imagined hand gestures.<br /><br />
+        - Data-efficient Causal Decoding of Spiking Neural Activity using Weighted Voting <a href="https://ieeexplore.ieee.org/abstract/document/9631022">(link)</a><br /><br />
+        <br />
+        In Marjaninejad et. al. 2017, by comparing and contrasting of performance of a linear and non-linear (Artificial Neural Networks) regressor on the different power bands driven features of Electrocorticography (ECoG) recordings collected from human participants, we have (i) succesfully predicted the actual finger movements of the participants and (ii) shown that the the population-level neural activity would loose most of its non-linear dynamics (at least on the examined power-band driven features).
+        <br /><br />
+        - Finger movements are mainly represented by a linear transformation of energy in band-specific ECoG signals <a href="https://ieeexplore.ieee.org/abstract/document/8036991">(link)</a><br /><br /><p/>
+        
+        <h2 style = "font-family:georgia,garamond,serif;font-size:17px;text-align:left">Signal to Noise Ratio (SNR) improvement for Electrocardiogram (ECG) recordings</h3>
+        <p align="left">In Marjaninejad et. al. 2014 (i), we have used Ensemble Empercial Mode Decomposition to enhanse SNR of ECG recordings to help with the precision of cilinical assesments. EMD is is an adaptive time-space analysis method suitable for processing series that are non-stationary and non-linear. It does so by decomposing signal into its main Intrinsic Mode Functions (IMFs). In Ensemble EMD, we further introduce and average the select IMFs of the same or similar signals that are contaminated with white noise to get a better estimation of the original signal.<br /><br />- Online signal to noise ratio improvement of ECG signal based on EEMD of synchronized ECG beats <a href="https://ieeexplore.ieee.org/abstract/document/7043904">(link)</a><br /><br /><p/>
+        
 
-        <h1 style = "font-family:georgia,garamond,serif;font-size:20px;text-align:left">Biomechanics:</h2>
-        <h2 style = "font-family:georgia,garamond,serif;font-size:17px;text-align:left">Biomechanics topic</h3>
-        <p align="left">placeholder<p/>
-        <h2 style = "font-family:georgia,garamond,serif;font-size:17px;text-align:left">Biomechanics topic</h3>
-        <p align="left">placeholder<p/>
+        <h2 style = "font-family:georgia,garamond,serif;font-size:17px;text-align:left">Hands-free control of an electrical wheelchair using Electrooculography (EOG)</h3>
+        <p align="left">In Marjaninejad et. al. 2014 (ii), we have proposed a low-cost, EOG based hands-free control pipeline for an electrical wheelchair. The proposed pipeline includes both hardware and software design that I designed, built, and optimized for the project.<br /><br />- A low-cost real-time wheelchair navigation system using electrooculography <a href="https://ieeexplore.ieee.org/abstract/document/6999863">(link)</a><br /><br /><p/>
 
+        <h2 style = "font-family:georgia,garamond,serif;font-size:17px;text-align:left">Optimizing blood glucose controller using Genetic Algorithm (GA)</h3>
+        <p align="left">The goal of this project is to deliver an efficient and reliable controller for the blood glucose level for type-I diabetic patients. I was in charge of the hyper-parameter optimization and I used Genetic Algorithm. The resulting controller provided all the desired metrics while beating the similar alternative approaches <br /><br />- Design of FPGA-based digital PID controller using Xilinx SysGen® for regulating blood glucose level of type-I diabetic patients <a href="https://www.aeuso.org/includes/files/articles/Vol3_Iss7_56-69_Design_of_FPGA-based_Digital_PID_Co.pdf">(link)</a><br /><br /><p/>
+
+        <h2 style = "font-family:georgia,garamond,serif;font-size:17px;text-align:left">Quantifying and gamifying the pathologic tremor assessment process in Virtual Reality (VR)</h3>
+        <p align="left">In this award winning hackaton project, we developed a VR based platform that gamifies the assessment protocol for tremor assessment and provides accurate and comparable metrics in line with, yet improving on the current cilinical practices <br /><br />- Quantifying and attenuating pathologic tremor in virtual reality <a href="https://arxiv.org/abs/1809.05970">(link)</a><br /><br /><p/>
+
+        <h2 style = "font-family:georgia,garamond,serif;font-size:17px;text-align:left">Utilzing Electromyogram (EMG) signal and Inertial Measurement Unit (IMU) readings using the Myo band to control a robotic arm</h3>
+        <p align="left">In this project, I led a group of very motivated interns at the Valero Lab at USC to utilize EMG and IMU recordings from a commercially available Myo band and its SDK to control a servo-driven robotic clipper hand <br /><br />- As seen on the animated gif on the left side of this page!<br /><br /><p/>
+
+        <h1 style = "font-family:georgia,garamond,serif;font-size:20px;text-align:left">Biomechanics:</h1>
+        <h2 style = "font-family:georgia,garamond,serif;font-size:17px;text-align:left">Understanding and modeling of the tendon-driven musculoskeletal  systems</h2>
+        <p align="left">In a variety of papers on this topic, using a variet of AI/ML models such as the GA and ANN, we have addressed needs in modelling, predicting, and controlling tendon-driven systems, wether biological systems or bio-inspired robots. <br /><br />- Quantifying and attenuating pathologic tremor in virtual reality <a href="https://arxiv.org/abs/1809.05970">(link)</a><br />
+        - Should Anthropomorphic Systems be "Redundant"? <a href="https://link.springer.com/chapter/10.1007/978-3-319-93870-7_2">(link)</a><br />
+        - Edge Computing in Nature: Minimal pre-processing of multi-muscle ensembles of spindle signals improves discriminability of limb movements <a href="https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2023.1183492/full">(link)</a><br />
+        - insideOut: A Bio-Inspired Machine Learning Approach to Estimating Posture in Robots Driven by Compliant Tendons <a href="https://www.frontiersin.org/articles/10.3389/fnbot.2021.679122/full">(link)</a><br />
+        - A Bio-Inspired Framework for Joint Angle Estimation from Non-Collocated Sensors in Tendon-driven Systems <a href="https://ieeexplore.ieee.org/abstract/document/9341268">(link)</a><br />
+        - Model-Free Control of Movement in a Tendon-Driven Limb via a Modified Genetic Algorithm <a href="https://ieeexplore.ieee.org/abstract/document/8512616">(link)</a><br />
+        - An Analytical Approach to Posture-Dependent Muscle Force and Muscle Activation Patterns <a href="https://ieeexplore.ieee.org/abstract/document/8512607">(link)</a><br /><br /><p/>
+        <h2 style = "font-family:georgia,garamond,serif;font-size:17px;text-align:left">Bipedal locomotion and gate pattern studies</h2>
+        <p align="left">In this subgroup of research topics, we have performed studies from providing better understanding on means to provide stability for bio-inspired robots to the role of cyclical pattern generators in human locomotion.
+        <br />
+        - Estimating Center of Pressure of a Bipedal Mechanism Using a Proprioceptive Artificial Skin around its Ankles <a href="https://ieeexplore.ieee.org/abstract/document/9630631">(link)</a><br />
+        - A model-based exploration of the role of pattern generating circuits during locomotor adaptation <a href="https://ieeexplore.ieee.org/abstract/document/7590630">(link)</a><br /><br />
+        <p/>
     </td>
   </tr>
 </table>
