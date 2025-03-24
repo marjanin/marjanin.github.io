@@ -2,51 +2,33 @@
 <html>
 <head>
 <style>
+
 /* mouse over link */
+
 a:hover {
   color: hotpink;
 }
 
 a.news_links {
-  font-family: georgia, garamond, serif;
-  font-size: 18px;
+font-family:georgia,garamond,serif;
+font-size:18px;
 }
 
 a.news_links:link {
   color: black;
-}
+} 
 a.news_links:hover {
   color: hotpink;
 }
 
-.container {
-  position: relative; /* To position the second video absolutely within this container */
+div.relative {
+  position: relative;
   left: 30px;
+  border: 3px
 }
-
-.video-container {
-  width: 40.8%; /* Same width as the image */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 5%;
-  overflow: hidden; /* Clip content within the rounded corners */
-}
-
-.video-container iframe {
-  display: block; /* Remove extra space below the iframe */
-  width: 100%;
-  height: 100%;
-  border: none; /* Remove default iframe border */
-}
-
 img {
-  float: left;
-  width: 40.8%;
-  height: auto;
   border-radius: 5%;
-  margin-right: 20px; /* Add some space between the image and the first video */
-  margin-bottom: 10px; /* Add some space between the first video and the second video */
 }
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -76,41 +58,38 @@ li a:hover:not(.active) {
 }
 
 .content {
-  max-width: 1028px;
+  max-width: 1000px;
   margin: auto;
   background: white;
   padding: 10px;
-  overflow: auto; /* Clear the float for the image */
 }
 </style>
 </head>
 <body>
 
 <div class="content">
-  <ul>
-    <li><a class="active" href="index.html">Home</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="on_the_news.html">On the news</a></li>
-    <li><a href="publications.html">Publications</a></li>
-    <li><a href="resume.html">Resume</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="projects.html">Projects</a></li>
+  <li><a href="on_the_news.html">On the news</a></li>
+  <li><a href="publications.html">Publications</a></li>
+  <li><a href="cv_resume.html">CV/Resume</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
 
-  <img src="./assets/full_small.jpg" alt="Ali Marjaninejad">
 
-  <div class="container">
-    <div class="video-container">
-      <iframe src="https://player.vimeo.com/video/723915014?badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="[USC Advancement] Health Scholarships: Ali Marjaninejad"></iframe>
-    </div>
-    <div class="video-container" style="margin-top: 10px;">
-      <iframe src="https://www.youtube.com/embed/oe8tgMMdpqg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-  </div>
 
-  <h1>Ali Marjaninejad</h1>
-  <p style="font-family:georgia,garamond,serif;font-size:19px;font-style:italic;">
-    I am a researcher with interests in Artificial Intelligence, Neuroscience, and the full spectrum between these two!
-  </p>
+<img src="./assets/full_small.jpg" alt="Ali Marjaninejad"  style="float:left;width:40%;height:auto;">
+<div class="relative">
+<iframe width="57%" height="310" src="https://player.vimeo.com/video/723915014?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen></iframe>
+<!-- old voa src link src="https://www.voanews.com/media/2047626/embed" -->
+<iframe width="57%" height="310" src="https://www.youtube.com/embed/oe8tgMMdpqg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+<h1>Ali Marjaninejad</h1>
+<p style = "font-family:georgia,garamond,serif;font-size:19px;font-style:italic;">
+         I am a researcher with interests in Artificial Intelligence, Neuroscience, and the full spectrum between these two!
+      </p>
+</div>
 </div>
 
 <br /><br /><br /><br /><br /><br /><br /><br />
